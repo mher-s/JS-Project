@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  width: 100%;
+  height: 100vh;
+}
+.display {
+  background: #fbfeff;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+}
+.display__title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  color: #4d6b84;
+  text-transform: uppercase;
+}
+.display__subtitle {
+  color: #b3bfc5;
+  text-align: center;
+}
+.display__dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80px;
+  width: 100%;
+  margin: 10px auto 0;
+  height: 10px;
+}
+.dot {
+  background: #ffe2e0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.dot-active {
+  width: 12px;
+  height: 12px;
+  background: #ff7862;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 80%;
+}
+.buttons__circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 400ms;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 0 5px #aaaaaa;
+}
+.buttons__circle:hover {
+  background: #00acff;
+  color: #fff;
+}
