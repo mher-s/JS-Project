@@ -74,3 +74,47 @@ body {
   background: #00acff;
   color: #fff;
 }
+.hidden-display {
+  display: none;
+  width: 160px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #000;
+}
+.modal {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -310%);
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: hidden;
+  transition: 300ms;
+}
+
+.fa-check-circle {
+  color: rgb(0, 170, 0);
+  font-size: 100px;
+}
+.fa-times-circle {
+  color: rgb(255, 0, 0);
+  font-size: 100px;
+}
+.modal-text {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.show-modal {
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
